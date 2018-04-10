@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test Photo</title>
+    </head>
+    <body>
+        <h1>Photo Upload</h1>
+        <br>
+        <form method="POST" enctype="multipart/form-data" action="/process/photo">
+            <table>
+                <tr>
+                    <td><label>File :</label></td>
+                    <td><input type="file" name="photo"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </body>
+</html>
