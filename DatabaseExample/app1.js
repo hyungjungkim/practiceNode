@@ -52,14 +52,13 @@ function connectDB(){
     var databaseUrl = 'mongodb://localhost:27017/local';
     
     // 데이터베이스 연결
-    MongoClient.connect(databaseUrl, function(err, databaseClient){
+    MongoClient.connect(databaseUrl, function(err, client){
         if(err) throw err;
         
         console.log('Conntect Database : ' + databaseUrl);
         
         // 데이터베이스 변수에 할당
-        database = databaseClient; /*이 부분을 주목 해야합니다.*/
-        database = databaseClient.db('local');
+        database = client; /*이 부분을 주목 해야합니다.*/
     });
 }
 
