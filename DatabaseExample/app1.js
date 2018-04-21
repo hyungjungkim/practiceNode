@@ -58,7 +58,7 @@ function connectDB(){
         console.log('Conntect Database : ' + databaseUrl);
         
         // 데이터베이스 변수에 할당
-        database = client; /*이 부분을 주목 해야합니다.*/
+        database = client.db('local'); /*이 부분을 주목 해야합니다.*/
     });
 }
 
